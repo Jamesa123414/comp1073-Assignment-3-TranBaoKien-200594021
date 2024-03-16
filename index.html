@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pizza Maker</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/img/pizza.png" type="image/x-icon">
+    <link href="https://themify.me/themify-icons" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img src="/img/pizza (1).png" alt="Pizza Maker Logo" class="logo">
+        <h1>Welcome to The Pizza Maker</h1>
+    </header>
+
+    <section id="orderSection">
+        <h2>Create Your Pizza</h2>
+        <form id="pizzaForm">
+            <div class="form-group">
+                <label for="size">Size:</label>
+                <select id="size" name="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="crust">Crust:</label>
+                <select id="crust" name="crust">
+                    <option value="thin">Thin</option>
+                    <option value="thick">Thick</option>
+                </select>
+            </div>
+            <div class="form-group toppings">
+                <label>Toppings:</label><br>
+                <input type="checkbox" id="pepperoni" name="topping" value="Pepperoni">
+                <label for="pepperoni">Pepperoni ($1.50)</label><br>
+                <input type="checkbox" id="mushrooms" name="topping" value="Mushrooms">
+                <label for="mushrooms">Mushrooms ($1.00)</label><br>
+                <input type="checkbox" id="olives" name="topping" value="Olives">
+                <label for="olives">Olives ($0.50)</label><br>
+                <input type="checkbox" id="bacon" name="topping" value="Bacon">
+                <label for="bacon">Bacon ($2.00)</label><br>
+                <input type="checkbox" id="extraCheese" name="topping" value="Extra Cheese">
+                <label for="extraCheese">Extra Cheese ($1.75)</label><br>
+                <input type="checkbox" id="pineapple" name="topping" value="Pineapple">
+                <label for="pineapple">Pineapple ($1.25)</label><br>
+            </div>
+            
+            <div class="form-group">
+                <button type="button" id="addTopping">Add Extra Topping</button>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Order">
+            </div>
+        </form>
+    </section>
+
+    <section id="summarySection">
+        <h2>Your Pizza Summary</h2>
+        <div id="pizzaSummary"></div>
+        <p id="price">Total Price: $0.00</p>
+    </section>
+
+    <footer>
+        <p>Student ID: 200594021, Name: Tran Bao Kien</p>
+    </footer>
+
+    <script src="/javascript/index.js" ></script>
+
+</body>
+</html>
